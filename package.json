@@ -9,8 +9,8 @@
     "fix": "eslint --fix --ext .js,.jsx .",
     "pretty": "prettier --write .",
     "pretty-check": "prettier --check .",
-    "build-front": "webpack",
-    "dev-front": "webpack-dev-server"
+    "build-front": "webpack --config src/frontend/webpack.config.js",
+    "dev-front": "webpack-dev-server --config src/frontend/webpack.config.js"
   },
   "author": "",
   "license": "ISC",

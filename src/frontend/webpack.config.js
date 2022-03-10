@@ -15,7 +15,7 @@ const basePlugins = [
   }),
   new HtmlWebpackPlugin({
     filename: 'index.html',
-    template: './template/index.html'
+    template: './src/frontend/template/index.html'
   })
 ];
 
@@ -39,7 +39,7 @@ const baseConfiguration = {
   },
   output: {
     filename: '[name].bundle.[contenthash].js',
-    path: path.join(`${__dirname}/src/frontend/public`),
+    path: path.join(`${__dirname}/public`),
     publicPath: '/',
   },
   module: {
