@@ -19,3 +19,5 @@ server.use(errorHandler);
 server.use(error404);
 
 server.listen(SERVER_PORT);
+
+console.log(`Server started, listening on port: ${SERVER_PORT}`);

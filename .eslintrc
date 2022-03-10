@@ -1,0 +1,15 @@
+{
+  "extends": ["airbnb", "airbnb/hooks"],
+  "rules": {
+    "no-unused-vars": "warn",
+    "import/no-extraneous-dependencies": "off",
+    "react/jsx-filename-extension": "off",
+    "max-len": ["error", {
+      "code": 100,
+      "ignoreComments": true
+    }]
+  },
+  "env": {
+    "jest": true
+  }
+}

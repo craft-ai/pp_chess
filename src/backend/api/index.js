@@ -16,7 +16,7 @@ router
       .catch(next);
   });
 
-  // Full route: api/move/:game_id
+// Full route: api/move/:game_id
 router
   .post('/move/:game_id')
   .post((req, res, next) => {
