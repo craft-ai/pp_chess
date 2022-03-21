@@ -2,8 +2,8 @@ const pg = require('pg');
 
 function initDatabase(pgPool) {
   return pgPool.query(`
-CREATE TABLE chess_game (id UUID PRIMARY KEY, user_id UUID);
-CREATE TABLE move (id UUID, movement TEXT);
+    CREATE TABLE chess_game (id UUID PRIMARY KEY, user_id UUID);
+    CREATE TABLE move (id UUID, movement TEXT);
   `);
 }
 

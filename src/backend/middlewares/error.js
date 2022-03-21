@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 function error404(req, res, next) {
   const { method, originalUrl } = req;
   const requestId = res.requestId || 'NoRequestId';
@@ -9,6 +10,7 @@ function error404(req, res, next) {
 }
 
 // If this function is called, `err` is an instanceof Error
+// eslint-disable-next-line no-unused-vars
 function errorHandler(err, req, res, next) {
   if (err.requestId) {
     res.status(err.status).send(err);

@@ -1,3 +1,4 @@
 node_modules
 out
 src/frontend/public
+.pnpm-debug.log
